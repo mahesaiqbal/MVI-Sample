@@ -40,8 +40,8 @@ val BottomBarScreenSaver = Saver<BottomBarScreen, String>(
     restore = {
         when (it) {
             BottomBarScreen.Popular::class.simpleName -> BottomBarScreen.Popular
-            BottomBarScreen.Popular::class.simpleName -> BottomBarScreen.NowPlaying
-            BottomBarScreen.Popular::class.simpleName -> BottomBarScreen.Upcoming
+            BottomBarScreen.NowPlaying::class.simpleName -> BottomBarScreen.NowPlaying
+            BottomBarScreen.Upcoming::class.simpleName -> BottomBarScreen.Upcoming
             else -> BottomBarScreen.Popular
         }
     }
