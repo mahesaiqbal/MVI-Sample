@@ -13,18 +13,9 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.DateRange
-import androidx.compose.material.icons.filled.KeyboardArrowLeft
-import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Star
-import androidx.compose.material.icons.filled.ThumbUp
-import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedIconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -33,10 +24,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import com.mahesaiqbal.mvisample.R
 import com.mahesaiqbal.mvisample.presentation.common.ui.FailureScreen
 import com.mahesaiqbal.mvisample.presentation.common.ui.LoadingScreen
 import com.mahesaiqbal.mvisample.utils.DateFormatHelper
@@ -83,7 +76,7 @@ fun MovieDetailScreenContent(
                             .size(50.dp)
                     ) {
                         Icon(
-                            imageVector = Icons.Default.ArrowBack,
+                            painter = painterResource(R.drawable.ic_arrow_back),
                             contentDescription = null
                         )
                     }
@@ -109,7 +102,7 @@ fun MovieDetailScreenContent(
                             modifier = Modifier.padding(8.dp)
                         ) {
                             Icon(
-                                imageVector = Icons.Default.Person,
+                                painter = painterResource(R.drawable.ic_person),
                                 contentDescription = null,
                                 tint = Color.Blue
                             )
@@ -125,7 +118,7 @@ fun MovieDetailScreenContent(
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Icon(
-                                imageVector = Icons.Default.Star,
+                                painter = painterResource(R.drawable.ic_star),
                                 contentDescription = null,
                                 tint = Color.Gray
                             )
@@ -142,7 +135,7 @@ fun MovieDetailScreenContent(
                             modifier = Modifier.padding(8.dp)
                         ) {
                             Icon(
-                                imageVector = Icons.Default.ThumbUp,
+                                painter = painterResource(R.drawable.ic_thumb_up),
                                 contentDescription = null,
                                 tint = Color.Green
                             )
@@ -159,7 +152,7 @@ fun MovieDetailScreenContent(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Icon(
-                            imageVector = Icons.Default.DateRange,
+                            painter = painterResource(R.drawable.ic_date_range),
                             contentDescription = null,
                             tint = Color.LightGray
                         )

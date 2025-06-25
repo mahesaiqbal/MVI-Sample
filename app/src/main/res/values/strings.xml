@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">MVI Sample</string>
     <string name="popular_movies">Popular</string>
+    <string name="popular_movies_title_bar">Popular Movies</string>
     <string name="now_playing_movies">Now Playing</string>
+    <string name="now_playing_movies_title_bar">Now Playing Movies</string>
     <string name="top_rated_movies">Top Rated</string>
+    <string name="top_rated_movies_title_bar">Top Rated Movies</string>
     <string name="upcoming_movies">Upcoming</string>
+    <string name="upcoming_movies_title_bar">Upcoming Movies</string>
 </resources>

@@ -13,8 +13,8 @@ import com.mahesaiqbal.mvisample.presentation.viewmodel.PopularMovieViewModel
 fun PopularMovieScreen(
     modifier: Modifier = Modifier,
     viewModel: PopularMovieViewModel = hiltViewModel(),
-    onShowInfo: (String) -> Unit,
-    onNavigateToDetail: (Int) -> Unit
+    onShowInfo: (String) -> Unit = {},
+    onNavigateToDetail: (Int) -> Unit = {}
 ) {
     LaunchedEffect(Unit) {
         viewModel.onIntent(PopularMovieIntent.GetPopularMovies)

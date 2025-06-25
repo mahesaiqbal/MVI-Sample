@@ -1,11 +1,13 @@
 package com.mahesaiqbal.mvisample.presentation.ui.navigation
 
-sealed class Screen(val route: String) {
-    data object Popular : Screen("popular")
-    data object NowPlaying : Screen("nowPlaying")
-    data object TopRated : Screen("topRated")
-    data object Upcoming : Screen("upcoming")
-    data object MovieDetails : Screen("movieDetails/{movieId}") {
-        fun createRoute(movieId: Int) = "movieDetails/$movieId"
-    }
+import androidx.navigation3.runtime.NavKey
+import kotlinx.serialization.Serializable
+
+@Serializable
+sealed class Screen: NavKey {
+    @Serializable
+    data object Movies : Screen()
+
+    @Serializable
+    data class MovieDetail(val movieId: Int) : Screen()
 }
